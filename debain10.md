@@ -11,12 +11,12 @@ sudo apt install \
     wget git vim zip unzip bzip2
 
 ## php 5.6 need low supporter
-$ curl -O https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz
-$ tar xf openssl-1.0.2u.tar.gz
-$ cd openssl-1.0.2u
-$ ./config --prefix=/opt/openssl-1.0.2u
-$ make
-$ sudo make install
+curl -O https://www.openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz
+tar xf openssl-1.0.2u.tar.gz
+cd openssl-1.0.2u
+./config --prefix=/opt/openssl-1.0.2u
+make
+sudo make install
 
 ## php 5.6.40 (10 Jan 2019)
 ### https://www.php.net/releases/
