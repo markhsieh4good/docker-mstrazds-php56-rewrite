@@ -1,0 +1,15 @@
+  payment.php:
+    #image: mstrazds/nginx-php56:latest 
+    image: nginx-php56:modify
+    container_name: demo.system
+    cap_add:
+      - SYS_TIME
+      - SYS_NICE
+    volumes:
+      # with php56
+      - ./sys_fourth_payment_merge_colorful/full_system:/var/www/public
+      - ./env/php-fpm-56/mstrazds/php56.ini:/etc/php/5.6/fpm/php.ini
+      - ./env/php-fpm-56/php-fpm-conf:/etc/php/5.6/fpm/pool.d
+    ports:
+      - 18440:80
+      - 
